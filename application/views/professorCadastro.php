@@ -43,7 +43,7 @@
 <div class="row">
     <div class="col-lg-3 col-md-3 col-3"></div>
     <div class="col-lg-6 col-md-6 col-6">
-        <h1 class="jumbotron-heading">Tabela de Professor</h1><p></p>
+        <h1 class="jumbotron-heading">Lista de Professor</h1><p></p>
 
         <form method="post" style="text-align:center" class="form-group">
             <div class="form-group">
@@ -54,7 +54,7 @@
                             <th>RG</th>
                             <th>Endereço</th>
                             <th>Turma</th>
-                         
+                            <th>Funções</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -67,7 +67,11 @@
                                 <td><?php echo $row->rg; ?></td>
                                 <td><?php echo $row->endereco; ?></td>
                                 <td><?php echo $row->turma; ?></td>
-
+                                
+                                <td>
+                                   <a class="glyphicon glyphicon-pencil" href="<?php echo base_url().'professor/editar/'.$row->id;?>"></a>
+                                   <a class="glyphicon glyphicon-trash " href="<?php echo base_url().'professor/excluir/'.$row->id;?>"></a>
+                               </td>
 
                             </tr>
                         <?php endforeach; ?>
@@ -82,7 +86,12 @@
 </div>
 </div>
 <script>
-    $(document).ready(function () {
-        $('#table_id').DataTable();
-    });
+   $(document).ready(function() {
+    $('#table_id').DataTable( {
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json"
+        }
+    } );
+} );
+    
 </script>

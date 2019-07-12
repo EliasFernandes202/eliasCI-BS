@@ -6,6 +6,8 @@
         <form method="post" style="text-align:center" class="form-group">
             <div class="form-group">
 
+                
+                
                 <input type="text" class="form-control form-control-lg" name="nome" placeholder="Nome"/><p></p>
 
                 <input type="text" class="form-control form-control-lg" name="rg" placeholder="RG"/><p></p>
@@ -26,7 +28,8 @@
                 </div>
                 <p></p>
 
-
+                
+                
                 <input type="submit" name="acao" value="Salvar" class="btn btn-success"/>
 
                 <input type="reset" class="btn btn-danger"/>
@@ -53,7 +56,7 @@
 <div class="row">
     <div class="col-lg-3 col-md-3 col-3"></div>
     <div class="col-lg-6 col-md-6 col-6">
-        <h1 class="jumbotron-heading">Tabela de Alunos</h1><p></p>
+        <h1 class="jumbotron-heading">Lista de Alunos</h1><p></p>
 
         <form method="post" style="text-align:center" class="form-group">
             <div class="form-group">
@@ -66,6 +69,8 @@
                             <th>Turma</th>
                             <th>idade</th>
                             <th>Sexo</th>
+                            <th>Funções</th>
+                            
 
                             
                         </tr>
@@ -78,11 +83,17 @@
 
                                 <td><?php echo $row->nome; ?></td>
                                 <td><?php echo $row->rg; ?></td>
-                                <td><?php echo $row->endereco; ?></td>
+                                <td><?php echo $row->endereco; ?></td> 
                                 <td><?php echo $row->turma; ?></td>
                                 <td><?php echo $row->idade; ?></td>
                                 <td><?php echo $row->sexo; ?></td>
+                              
 
+                               <td>
+                                   <a class="glyphicon glyphicon-pencil" href="<?php echo base_url().'alunos/editar/'.$row->id;?>"></a>
+                                   <a class="glyphicon glyphicon-trash " href="<?php echo base_url().'alunos/excluir/'.$row->id;?>"></a>
+                               </td>
+                               
 
                             </tr>
                         <?php endforeach; ?>
