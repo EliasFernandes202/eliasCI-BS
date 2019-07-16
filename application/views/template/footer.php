@@ -19,7 +19,7 @@
     <h3 class="modal-title">Sucesso</h3>
     <div class="modal-body">
         <p>
-            Cadastro atualizado!
+            Registro atualizado!
         </p>
     </div>
     <div class="modal-footer">

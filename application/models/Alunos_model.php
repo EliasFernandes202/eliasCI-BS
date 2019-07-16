@@ -9,7 +9,7 @@ class Alunos_model extends CI_Model {
     }
 
     function inserir($p) {
-        return $this->db->insert('alunos', $p); //'alunos' é o nome da tabela
+        return $this->db->insert('alunos', $p); //'usuarios' é o nome da tabela
     }
 
     function deletar($id) {

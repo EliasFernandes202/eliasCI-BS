@@ -3,11 +3,8 @@
     <div class="col-lg-6 col-md-6 col-6">
         <h1 class="jumbotron-heading">Cadastro de Aluno</h1><p></p>
         <?php echo form_open('alunos/inserir'); ?>
-        <form method="post" style="text-align:center" class="form-group">
             <div class="form-group">
-
-                
-                
+            
                 <input type="text" class="form-control form-control-lg" name="nome" placeholder="Nome"/><p></p>
 
                 <input type="text" class="form-control form-control-lg" name="rg" placeholder="RG"/><p></p>
@@ -40,12 +37,7 @@
 
                 <p></p>
 
-
-
-
-
                 <?php form_close(); ?>
-        </form>
     </div>
     <div class="col-lg-3 col-md-3 col-3"></div>
 </div>
