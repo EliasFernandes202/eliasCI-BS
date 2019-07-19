@@ -55,7 +55,7 @@
                         <tr>
                             <th>Nomeusuario</th>
                             <th>User</th>
-                            <th>Senha</th>
+                            
                             <th>perfilAcesso</th>
                             <th>Funções</th>
                             
@@ -71,7 +71,7 @@
 
                                 <td><?php echo $row->nomeUsuario; ?></td>
                                 <td><?php echo $row->user; ?></td>
-                                <td><?php echo $row->senha; ?></td> 
+                                
                                 <td><?php echo $row->perfilAcesso; ?></td>
                                                              
 

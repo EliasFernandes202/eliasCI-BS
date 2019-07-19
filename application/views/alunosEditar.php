@@ -37,7 +37,7 @@
 
 
 
-                <a class="btn btn-primary" href="<?php base_url(); ?> home" id="cancelar">Cancelar</a>
+                <a class="btn btn-primary" href="<?php base_url(); ?> ../../home" id="cancelar">Cancelar</a>
 
                 <p></p>
 
