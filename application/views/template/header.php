@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8" >
         <title>Projeto Aulas</title>
-        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="shortcut icon" type="image/jpg" href="<?php base_url ();?>imagem/favicon.icon"/>
 
         <meta http-equiv="Content-Language" content="pt-br">
 
